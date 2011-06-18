@@ -116,7 +116,7 @@ function get_qs(key, default_) {
 function trans_visibility() {
     if ($("#hide_them").attr("checked")) {
         $(".translation").addClass("hidden");
-        $.cookie('cm-nightlies', 1);
+        $.cookie('cm-nightlies', 1,  {expires:7});
     } else {
         $(".translation").removeClass("hidden");
         $.cookie('cm-nightlies', null);
